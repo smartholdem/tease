@@ -1,6 +1,6 @@
 {
 	"name": "@smartholdem/tease",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "Standardises scripts & configurations for simplified TypeScript module maintenance",
 	"license": "MIT",
 	"repository": "https://github.com/smartholdem/tease",
