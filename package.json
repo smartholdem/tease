@@ -1,0 +1,68 @@
+{
+	"name": "@smartholdem/tease",
+	"version": "2.0.1",
+	"description": "Standardises scripts & configurations for simplified TypeScript module maintenance",
+	"license": "MIT",
+	"repository": "https://github.com/smartholdem/tease",
+	"main": "dist/index.js",
+	"bin": "dist/bin.js",
+	"scripts": {
+		"build": "ts-node src/bin.ts build",
+		"check": "ts-node src/bin.ts check",
+		"format": "ts-node src/bin.ts format",
+		"lint": "ts-node src/bin.ts lint",
+		"prepare": "ts-node src/bin.ts install && ts-node src/bin.ts build",
+		"publish": "npm run prepare && npm publish --access=public",
+		"specs": "ts-node src/bin.ts specs",
+		"test": "ts-node src/bin.ts test"
+	},
+	"files": [
+		"config/",
+		"dist/"
+	],
+	"dependencies": {
+		"@sindresorhus/tsconfig": "^2.0.0",
+		"@types/jest": "^27.0.2",
+		"@types/prettier": "^2.3.2",
+		"@types/rimraf": "^3.0.2",
+		"@typescript-eslint/eslint-plugin": "^4.31.2",
+		"@typescript-eslint/parser": "^4.31.2",
+		"arg": "^5.0.1",
+		"ci-info": "^3.2.0",
+		"dot-prop": "^6.0.1",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-jest": "^24.4.2",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-unused-imports": "^1.1.4",
+		"husky": "^8.0.3",
+		"is-ci": "^3.0.0",
+		"jest": "^27.2.1",
+		"jest-extended": "^0.11.5",
+		"pinst": "^2.1.6",
+		"pkg-conf": "^3.1.0",
+		"prettier": "^2.4.1",
+		"prettier-plugin-package": "^1.3.0",
+		"rimraf": "^3.0.2",
+		"ts-jest": "^27.0.5",
+		"ts-node": "^10.2.1",
+		"type-fest": "^2.3.4",
+		"typescript": "^4.4.3",
+		"typescript-language-server": "^0.6.2",
+		"zod": "^3.8.2"
+	},
+	"types": "dist/index",
+	"authors": [
+		{
+			"name": "TechnoL0g",
+			"email": "technolog@smartholdem.io",
+			"homepage": "https://smartholdem.io",
+			"role": "Developer"
+		}
+	],
+	"devDependencies": {
+		"@types/node": "^12.20.55",
+		"lint-staged": "^13.2.1"
+	}
+}
