@@ -2,9 +2,9 @@ module.exports = {
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		project:
-			process.env.npm_package_name === "@konceiver/tease"
+			process.env.npm_package_name === "@smartholdem/tease"
 				? "./tsconfig.eslint.json"
-				: "node_modules/@konceiver/tease/config/tsconfig.eslint.json",
+				: "node_modules/@smartholdem/tease/config/tsconfig.eslint.json",
 		extraFileExtensions: [".json"],
 	},
 	plugins: ["@typescript-eslint", "jest", "prettier", "simple-import-sort", "unused-imports"],
