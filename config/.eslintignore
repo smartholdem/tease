@@ -1,0 +1,5 @@
+.coverage
+.pnp.js
+dist/**
+docs/**
+packages/**/dist
