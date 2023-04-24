@@ -1,0 +1,2 @@
+git config --unset core.hookspath
+npm install husky@4
